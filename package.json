@@ -1,0 +1,104 @@
+{
+  "name": "unidevbox",
+  "displayName": "UniDevBox - Developer Tools",
+  "description": "Essential developer tools for formatting, encoding, and transforming code directly in VS Code",
+  "version": "0.1.0",
+  "publisher": "unidevbox",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Formatters",
+    "Other"
+  ],
+  "keywords": [
+    "json",
+    "html",
+    "css",
+    "javascript",
+    "formatter",
+    "beautify",
+    "minify",
+    "base64",
+    "url encode"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "unidevbox.formatJson",
+        "title": "UniDevBox: Format JSON"
+      },
+      {
+        "command": "unidevbox.minifyJson",
+        "title": "UniDevBox: Minify JSON"
+      },
+      {
+        "command": "unidevbox.formatHtml",
+        "title": "UniDevBox: Format HTML"
+      },
+      {
+        "command": "unidevbox.minifyHtml",
+        "title": "UniDevBox: Minify HTML"
+      },
+      {
+        "command": "unidevbox.formatCss",
+        "title": "UniDevBox: Format CSS"
+      },
+      {
+        "command": "unidevbox.minifyCss",
+        "title": "UniDevBox: Minify CSS"
+      },
+      {
+        "command": "unidevbox.formatJavaScript",
+        "title": "UniDevBox: Format JavaScript"
+      },
+      {
+        "command": "unidevbox.minifyJavaScript",
+        "title": "UniDevBox: Minify JavaScript"
+      },
+      {
+        "command": "unidevbox.base64Encode",
+        "title": "UniDevBox: Base64 Encode"
+      },
+      {
+        "command": "unidevbox.base64Decode",
+        "title": "UniDevBox: Base64 Decode"
+      },
+      {
+        "command": "unidevbox.urlEncode",
+        "title": "UniDevBox: URL Encode"
+      },
+      {
+        "command": "unidevbox.urlDecode",
+        "title": "UniDevBox: URL Decode"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/js-beautify": "^1.14.3",
+    "@types/node": "^20.10.0",
+    "@types/vscode": "^1.80.0",
+    "@vscode/vsce": "^2.22.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "js-beautify": "^1.14.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/unidevbox-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/unidevbox-vscode/issues"
+  },
+  "homepage": "https://unidevbox.com"
+}
