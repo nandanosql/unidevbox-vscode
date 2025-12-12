@@ -2,7 +2,7 @@
   "name": "unidevbox",
   "displayName": "UniDevBox - Developer Tools",
   "description": "Essential developer tools for formatting, encoding, and transforming code directly in VS Code",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "unidevbox",
   "engines": {
     "vscode": "^1.80.0"
@@ -22,7 +22,9 @@
     "base64",
     "url encode"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
